@@ -1,6 +1,11 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "my-app": "cd ./packages && yarn start",
+    "build-production": "lerna run build --stream",
+    "build-development": "lerna run build.dev --stream"
+  },
   "devDependencies": {
     "lerna": "^3.20.2",
     "chalk": "latest"

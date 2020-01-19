@@ -142,17 +142,17 @@ Command Options:
   --yes           Skip all prompts, accepting default values
 ```
 
-Add custom 
+### Add react-app package
 
 ```bash
-cd ./packages && npx create-react-app @my-project/my-app
+cd ./packages && yarn create react-app my-app --template typescript
 ```
 
 add to project package.json
 ```json
 {
   "scripts": {
-    "serve": "some serve command",
+    "start": "some serve command",
     "build": "some build command",
     "build.dev": "some build command"
   }
@@ -163,7 +163,7 @@ add to project package.json
 ```json
 {
   "scripts": {
-    "my-app": "cd ./packages && yarn serve",
+    "my-app": "cd ./packages && yarn start",
     "build-production": "lerna run build --stream",
     "build-development": "lerna run build.dev --stream"
   }
