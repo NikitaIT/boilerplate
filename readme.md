@@ -1,4 +1,9 @@
-# Lerna [docs](https://github.com/lerna/lerna#about)
+A tool for managing JavaScript projects with multiple packages.
+
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+
+# Lerna [docs](https://github.com/lerna/lerna#about) 
+
 
 ## Setup Lerna
 
