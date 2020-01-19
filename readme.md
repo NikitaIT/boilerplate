@@ -66,6 +66,18 @@ package.json
   ]
 }
 ```
+
+Add git ignore
+
+.gitignore
+```
+.log
+.DS_Store
+.jest-*
+lib
+node_modules
+```
+
 ## Working with Lerna
 
 Bootstrap the packages in the current Lerna repo. 
