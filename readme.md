@@ -101,6 +101,8 @@ as if the packages were already existing and available in your `node_modules` fo
 lerna bootstrap
 ```
 
+Add yarn.lock to git after bootstrap.
+
 Run an npm script in each package that contains that script.
 
 ```bash
