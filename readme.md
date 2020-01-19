@@ -72,6 +72,13 @@ package.json
 }
 ```
 
+Switch WebStorm to yarn
+
+open by [link](jetbrains://WebStorm/settings?name=Languages+%26+Frameworks--Node.js+and+NPM) and select yarn
+```
+File | Settings | Languages & Frameworks | Node.js and NPM
+```
+
 Add git ignore
 
 .gitignore
