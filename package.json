@@ -2,9 +2,13 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.20.2"
+    "lerna": "^3.20.2",
+    "chalk": "latest"
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "gitHooks": {
+    "commit-msg": "node scripts/verifyCommitMsg.js"
+  }
 }
