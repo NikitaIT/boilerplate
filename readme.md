@@ -163,7 +163,7 @@ add to project package.json
 ```json
 {
   "scripts": {
-    "my-app": "cd ./packages && yarn start",
+    "my-app": "cd ./packages/my-app && yarn start",
     "build-production": "lerna run build --stream",
     "build-development": "lerna run build.dev --stream"
   }
