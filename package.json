@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "my-app": "cd ./packages/my-app && yarn start",
+    "lib": "cd ./packages/lib && yarn start",
     "build-production": "lerna run build --stream",
     "build-development": "lerna run build.dev --stream"
   },

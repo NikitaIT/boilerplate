@@ -169,3 +169,11 @@ add to project package.json
   }
 }
 ```
+
+### Add storybook library package
+
+Repeat all installation steps for `Add react-app package` with new name like `lib` instead like `my-app`. 
+It will be fast if you have already taken this step.
+
+I want to pay attention that the `node_modules` folder in the created project is **empty**(has only `bin` and optional `cache`), 
+this is important, we should try to ensure that all dependency versions of all packages match.
