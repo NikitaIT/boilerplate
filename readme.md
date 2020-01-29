@@ -178,7 +178,46 @@ It will be fast if you have already taken this step.
 I want to pay attention that the `node_modules` folder in the created project is **empty**(has only `bin` and optional `cache`), 
 this is important, we should try to ensure that all dependency versions of all packages match.
 
+Before execute go to lib folder:
+```bash
+cd ./packages/lib
+```
+
 If you use `create-react-app`: `react_scripts` else: `react`
 ```bash
-cd ./packages/lib && npx -p @storybook/cli sb init --type react_scripts
+npx -p @storybook/cli sb init --type react_scripts
+```
+
+Add docs and mdx for storybook [docs for manual configuration](https://github.com/storybookjs/storybook/blob/next/addons/docs/README.md#installation):
+```bash
+yarn add @storybook/addon-docs --dev
+```
+
+Add to `main.js` config and `(|mdx)` pattern:
+```js
+module.exports = {
+  stories: ['../src/**/*.stories.(js|mdx)'],
+  addons: [createAddonDocsConfig()]
+}
+
+function createAddonDocsConfig() {
+  return {
+    name: '@storybook/addon-docs',
+    options: {
+      configureJSX: true, // like isBabelOptionsExists
+      babelOptions: {},
+      sourceLoaderOptions: null,
+    },
+  };
+}
+```
+
+Add the following to your `Jest` configuration:
+```json
+{
+  "transform": {
+    "^.+\\.[tj]sx?$": "babel-jest",
+    "^.+\\.mdx$": "@storybook/addon-docs/jest-transform-mdx"
+  }
+}
 ```
