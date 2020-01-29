@@ -169,3 +169,9 @@ add to project package.json
   }
 }
 ```
+
+## Add eslint rules
+
+```bash
+yarn add -DW eslint eslint-plugin-react @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import
+```
