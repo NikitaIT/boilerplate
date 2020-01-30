@@ -1,0 +1,29 @@
+{
+  "name": "@my/project-configs",
+  "version": "1.0.0",
+  "description": "Project configs",
+  "dependencies": {
+    "@babel/cli": "7.8.3",
+    "@babel/core": "7.8.3",
+    "@babel/node": "7.8.3",
+    "@babel/preset-env": "7.8.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "7.16.0",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.4",
+    "prettier": "^1.19.1",
+    "stylelint": "^13.0.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-scss": "^3.14.2"
+  }
+}

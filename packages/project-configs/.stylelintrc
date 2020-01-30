@@ -1,0 +1,4 @@
+{
+  "processors": [],
+  "extends": ["stylelint-prettier/recommended","stylelint-config-standard", "stylelint-config-recommended-scss"]
+}

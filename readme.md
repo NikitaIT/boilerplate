@@ -170,6 +170,23 @@ add to project package.json
 }
 ```
 
+## Add eslint rules
+
+```bash
+yarn add -DW eslint eslint-plugin-react @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import
+```
+
+and create simple config file for it `.eslintrc.js` in root.
+
+If you have a `ts` add new script in `package.json` for linting `*.ts` files:
+
+```bash
+{
+  "scripts": {
+    "lint:ts": "eslint 'packages/**/*.ts{,x}'"
+  }
+}
+```
 ### Add storybook library package [docs](https://storybook.js.org/docs/guides/guide-react/)
 
 Repeat all installation steps for `Add react-app package` with new name like `lib` instead like `my-app`. 

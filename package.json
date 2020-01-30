@@ -5,16 +5,31 @@
     "my-app": "cd ./packages/my-app && yarn start",
     "lib": "cd ./packages/lib && yarn start",
     "build-production": "lerna run build --stream",
-    "build-development": "lerna run build.dev --stream"
+    "build-development": "lerna run build.dev --stream",
+    "lint:style": "stylelint \"packages/**/*.{css,scss}\"",
+    "lint:ts": "eslint \"packages/**/*.{tsx,ts}\"",
+    "test": "jest"
   },
   "devDependencies": {
+    "@types/jest": "^25.1.1",
+    "chalk": "latest",
+    "jest": "^25.1.0",
     "lerna": "^3.20.2",
-    "chalk": "latest"
+    "ts-jest": "^25.0.0"
   },
   "workspaces": [
     "packages/*"
   ],
   "gitHooks": {
     "commit-msg": "node scripts/verifyCommitMsg.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "packages/**/*.{tsx,js,ts}": "eslint --cache --fix",
+    "packages/**/*.css": "stylelint --fix"
   }
 }
