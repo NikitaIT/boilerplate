@@ -175,3 +175,15 @@ add to project package.json
 ```bash
 yarn add -DW eslint eslint-plugin-react @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import
 ```
+
+and create simple config file for it `.eslintrc.js` in root.
+
+If you have a `ts` add new script in `package.json` for linting `*.ts` files:
+
+```bash
+{
+  "scripts": {
+    "lint:ts": "eslint 'packages/**/*.ts{,x}'"
+  }
+}
+```
