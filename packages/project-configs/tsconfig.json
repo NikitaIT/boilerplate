@@ -8,10 +8,10 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "rootDir": "./",
-    "baseUrl": "./",
-    "paths": {
-      "*": ["node_modules", "packages"]
-    }
+    "baseUrl": "./"
+    //    "paths": {
+    //      "*": ["node_modules", "packages"]
+    //    }
   },
   "include": ["packages"],
   "exclude": ["node_modules"]
