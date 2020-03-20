@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { classNames } from '@mylib/framework';
 
 const App: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const App: React.FC = () => {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
-          className="App-link"
+          className={classNames({ 'App-link': true })}
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"

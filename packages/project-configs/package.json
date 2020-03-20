@@ -1,5 +1,5 @@
 {
-  "name": "@my/project-configs",
+  "name": "@mylib/project-configs",
   "version": "1.0.0",
   "description": "Project configs",
   "dependencies": {

@@ -1,0 +1,25 @@
+{
+  "name": "@mylib/framework",
+  "version": "0.0.1",
+  "description": "framework",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "repository": "",
+  "author": "",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "classnames": "2.2.6"
+  },
+  "devDependencies": {
+    "@types/classnames": "2.2.10"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "start": "tsc -w --preserveWatchOutput"
+  }
+}

@@ -2,7 +2,7 @@
 // https://jestjs.io/docs/en/configuration.html
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires,import/no-extraneous-dependencies
-const baseConfig = require("@my/project-configs/jest.config");
+const baseConfig = require('@my/project-configs/jest.config');
 
 module.exports = {
   // желательно сделать merge вместо диструктуризации
@@ -29,7 +29,7 @@ module.exports = {
   // collectCoverageFrom: undefined,
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: "coverage"
+  coverageDirectory: 'coverage',
 
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [

@@ -8,11 +8,24 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "rootDir": "./",
-    "baseUrl": "./"
+    "baseUrl": "./",
     //    "paths": {
-    //      "*": ["node_modules", "packages"]
-    //    }
+    //      "@my/*": ["packages/*/src"]
+    //    },
+    // https://github.com/RyanCavanaugh/learn-a/#tsconfigsettingsjson
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
   },
   "include": ["packages"],
-  "exclude": ["node_modules"]
+  "files": [],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "lib",
+    "__tests__",
+    "**/*.test*",
+    "**/*.spec*"
+  ]
 }
