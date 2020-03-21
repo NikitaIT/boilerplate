@@ -1,5 +1,3 @@
 module.exports = {
-	extends: [
-		'./node_modules/@my/project-configs/.eslintrc',
-	],
+  extends: ['./node_modules/@mylib/project-configs/.eslintrc'],
 };
