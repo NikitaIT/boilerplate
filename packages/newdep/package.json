@@ -15,9 +15,11 @@
   ],
   "dependencies": {},
   "peerDependencies": {
+    "@fluentui/react": "7.106.4",
     "@mylib/framework": "*"
   },
   "devDependencies": {
+    "@fluentui/react": "7.106.4",
     "@mylib/framework": "*"
   },
   "scripts": {

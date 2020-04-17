@@ -1,6 +1,7 @@
 {
   "include": ["src"],
   "extends": "../../tsconfig.json",
+  "lib": ["dom", "dom.iterable", "esnext"],
   "compilerOptions": {
     "outDir": "lib",
     "rootDir": "src"

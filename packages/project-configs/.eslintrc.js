@@ -3,11 +3,14 @@ module.exports = {
     node: true,
     browser: true,
     jest: true,
+    es6: true,
   },
   parser: '@typescript-eslint/parser', // Specifies the ESLint parser
+  plugins: ['@typescript-eslint'],
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended', // Uses the recommended rules from the @typescript-eslint/eslint-plugin
     'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
@@ -18,7 +21,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
   ],
   parserOptions: {
-    ecmaVersion: 11, // Allows for the parsing of modern ECMAScript features
+    ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module', // Allows for the use of imports
     ecmaFeatures: {
       jsx: true, // Allows for the parsing of JSX
@@ -40,6 +43,9 @@ module.exports = {
     'jest/prefer-to-have-length': 'warn',
     'jest/valid-expect': 'error',
     'jest/valid-title': 'error',
+    '@typescript-eslint/no-use-before-define': 'off',
+    // note you must disable the base rule as it can report incorrect errors
+    'no-dupe-class-members': 'off',
     // jest end
   },
   overrides: [
